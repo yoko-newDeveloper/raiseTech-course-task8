@@ -82,6 +82,9 @@ mysql>
 ```
 
 movie_listがあることを確認する。  
+以下の場合、`show databases;`と打ち込んでください。  
+SQL文においてセミコロンはコマンドの終わりを意味していますので入力忘れがないようにしましょう。  
+
 ```mysql
 mysql> show databases;
 +--------------------+
@@ -99,7 +102,7 @@ mysql> show databases;
 movie_listの利用を開始する。  
 
 ```mysql
-mysql> use movie_list
+mysql> use movie_list;
 Reading table information for completion of table and column names
 You can turn off this feature to get a quicker startup with -A
 
@@ -141,7 +144,6 @@ Query OK, 1 row affected (0.03 sec)
 レコードの登録結果を確認する。
 
 ```mysql
-
 mysql> select * from movies;
 +----+--------------------------------+-----------------------------------------------+
 | id | name                           | director                                      |
