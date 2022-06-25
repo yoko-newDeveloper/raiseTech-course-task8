@@ -16,7 +16,7 @@ GitやUNIXコマンドの操作についてはすでに学習済みを想定し�
 
 Dockerをインストールする。  
 確認方法はターミナルから下記を実行する。  
-Windows環境の方はターミナルとしてGit Bashを使用する。
+Windows環境の方はターミナルとしてGit BashやWSL上のターミナルを使用する。
 
 ```bash
 % docker -v
@@ -40,7 +40,7 @@ README.md               docker-compose.yml      sql
 ただし初回は時間がかかります。  
 出力内容も下記より多いです。  
 ```bash
-% docker com　pose up -d
+% docker compose up -d
 [+] Running 2/2
  ⠿ Network docker-mysql-hands-on_default  Created                                                                                  0.0s
  ⠿ Container docker-mysql-hands-on        Started
@@ -61,7 +61,7 @@ MySQLにログインします。
 % docker compose exec db mysql -uroot -p    
 Enter password:
 ```
-※上記passwordを入力後にエラーが表示されるまたは動作が固まった場合、
+※Git Bashの場合、passwordを入力後に動作しないことがあります。
 Windows環境の方は下記コマンドの入力を試してください。
 ```bash
 $ winpty docker compose exec db mysql -uroot -p    
