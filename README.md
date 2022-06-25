@@ -161,5 +161,17 @@ mysql> exit
 Bye
 ```
 
+起動したDockerコンテナを停止する。  
+
+```bash
+$ docker compose down
+```
+
+停止できていることを確認する。  
+```bash
+% docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+
 ここまでできたらハンズオン完了です！  
 お疲れさまでした！  
