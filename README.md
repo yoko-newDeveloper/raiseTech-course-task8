@@ -52,7 +52,25 @@ docker-mysql-hands-on
 % cd docker-mysql-hands-on
 ```
 
-docker-compose.ymlがあることを確認する。  
+ディレクトリ内のファイル構成は下記のようになっています。
+
+```
+.
+├── Dockerfile
+├── README.md
+├── conf
+│   └── mysql
+│       └── my.cnf
+├── docker-compose.yml
+├── renovate.json
+└── sql
+    └── 001-create-table-and-load-data.sql
+```
+
+このハンズオンはファイルを編集せずともこのディレクトリ内でコマンドを実行するとMySQLの構築、テーブルのデータ登録が行えるようになっています。  
+
+
+念の為、下記コマンドでdocker-compose.ymlがあることを確認してください。  
 ```bash
 % ls
 Dockerfile              conf                    renovate.json
