@@ -14,7 +14,7 @@ services:
     ports:
       - 3307:3306
     volumes:
-      - $PWD/sql:/docker-entrypoint-initdb.d
+      - ./sql:/docker-entrypoint-initdb.d
       - my-vol:/var/lib/mysql
 volumes:
   my-vol:

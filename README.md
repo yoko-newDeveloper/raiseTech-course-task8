@@ -25,11 +25,52 @@ Docker version 20.10.12, build e91ed5707e
 
 ## 手順
 
-レポジトリを任意のディレクトリ配下にてcloneします。  
+レポジトリを任意のディレクトリ配下にてcloneします。 
 
-cloneしたらディレクトリ内に移動して作業を始めましょう。  
+コマンドの例）
+sshの場合: git clone git@github.com:raisetech-for-student/docker-mysql-hands-on.git  
+httpsの場合: git clone https://github.com/raisetech-for-student/docker-mysql-hands-on.git  
+どちらでもいいですが、それぞれがどういうものかは把握しておきましょう。  
+`GitHub ssh https 違い`で調べるとよいです。  
 
-docker-compose.ymlがあることを確認する。  
+cloneで指定する値は下記のように取得できます。  
+
+<img width="400" alt="スクリーンショット 2022-10-29 11 31 09" src="https://user-images.githubusercontent.com/62045457/198778836-86d84980-a6fd-464a-87f3-ff168b6b2cdf.png">
+
+このハンズオンリポジトリに限らず、GitHubで公開されているリポジトリは誰でもcloneできるのでぜひ他の人が作ったソースコードをcloneして、学習に使うなど活用してみてください。  
+
+git cloneを実行するとカレントディレクトリ上に`docker-mysql-hands-on`ディレクトリが作成されているはずです。  
+
+```bash
+% ls
+docker-mysql-hands-on
+```
+
+ディレクトリ内に移動して作業を始めましょう。  
+
+```bash
+% cd docker-mysql-hands-on
+```
+
+ディレクトリ内のファイル構成は下記のようになっています。
+
+```
+.
+├── Dockerfile
+├── README.md
+├── conf
+│   └── mysql
+│       └── my.cnf
+├── docker-compose.yml
+├── renovate.json
+└── sql
+    └── 001-create-table-and-load-data.sql
+```
+
+このハンズオンはファイルを編集せずともこのディレクトリ内でコマンドを実行するとMySQLの構築、テーブルのデータ登録が行えるようになっています。  
+
+
+念の為、下記コマンドでdocker-compose.ymlがあることを確認してください。  
 ```bash
 % ls
 Dockerfile              conf                    renovate.json
