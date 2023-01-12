@@ -96,7 +96,9 @@ CONTAINER ID   IMAGE                      COMMAND                  CREATED      
 ```
 
 MySQLにログインします。
-パスワードはdocker-compose.ymlに記載されているとおり「password」です。
+パスワードはdocker-compose.ymlに記載されているとおり「password」です。  
+ただし、ターミナルにパスワードを入力するとき、キーボードを叩いても何も表示されませんが心配せず、入力後にエンターキーを押してください。  
+パスワードの入力内容がまったく表示されないのはターミナルを盗み見されても問題がないようにするためです。  
 
 ```bash
 % docker compose exec db mysql -uroot -p    
