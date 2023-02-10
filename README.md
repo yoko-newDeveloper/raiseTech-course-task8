@@ -27,9 +27,9 @@ Docker version 20.10.12, build e91ed5707e
 
 レポジトリを任意のディレクトリ配下にてcloneします。 
 
-コマンドの例）
-sshの場合: git clone git@github.com:raisetech-for-student/docker-mysql-hands-on.git  
-httpsの場合: git clone https://github.com/raisetech-for-student/docker-mysql-hands-on.git  
+コマンドの例）  
+sshの場合: `git clone git@github.com:raisetech-for-student/docker-mysql-hands-on.git`  
+httpsの場合: `git clone https://github.com/raisetech-for-student/docker-mysql-hands-on.git`  
 どちらでもいいですが、それぞれがどういうものかは把握しておきましょう。  
 `GitHub ssh https 違い`で調べるとよいです。  
 
