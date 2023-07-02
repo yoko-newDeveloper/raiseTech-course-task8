@@ -1,19 +1,18 @@
 # docker-mysql-hands-onの実施
 
 ## 動作確認
-<br>
+  
 - docker-mysql-hands-on記載以外の実施内容
-<br>
-<br>
+  
 
-| 実行内容 | 結果|
-| ---| --- |
+| 実行内容 | 結果 |
+| --- | --- |
 | moviesからレコード削除 | ゴッドファーザーの削除確認 |
 | データベース追加 | skiresort_listの存在確認 |
-|テーブル追加|snowresortの存在確認|
+| テーブル追加 | snowresortの存在確認 |
 | 複数レコードの追加 | 3つのレコードが追加されていることを確認 |
-| snowresortのデータ全てを削除|Emptyであること確認|
-| データベースskiresort_listを削除 | skuresort_listがないこと確認 |
+| snowresortのデータ全てを削除 | Emptyであること確認 |
+| データベースskiresort_listを削除 | skiresort_listがないこと確認 |
 
 
 ## 動作確認キャプチャ
